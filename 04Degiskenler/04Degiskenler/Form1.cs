@@ -47,7 +47,12 @@ namespace _04Degiskenler
 
             bool bugunTatilMi = false;
             bool bugunDersVarMi = true;
-            bool result = 10 > 2; 
+            bool result = 10 > 2;
+
+            var deger = "ahmet";
+            var deger1 = 5;
+            var durum11 = false;
+
 
         }
 
@@ -69,6 +74,15 @@ namespace _04Degiskenler
         private void txtMetin_TextChanged(object sender, EventArgs e)
         {
             this.Text = txtMetin.Text;
+        }
+
+        private void btnZaman_Click(object sender, EventArgs e)
+        {
+            DateTime zaman = new DateTime();
+            zaman = DateTime.Now;
+
+            MessageBox.Show(zaman.ToString());
+            MessageBox.Show(zaman.ToString("dd/MM/yyyy"));
         }
     }
 }

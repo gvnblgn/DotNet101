@@ -31,6 +31,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtMetin = new System.Windows.Forms.TextBox();
             this.btnMerhaba = new System.Windows.Forms.Button();
+            this.btnZaman = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -61,11 +62,22 @@
             this.btnMerhaba.UseVisualStyleBackColor = true;
             this.btnMerhaba.Click += new System.EventHandler(this.btnMerhaba_Click);
             // 
+            // btnZaman
+            // 
+            this.btnZaman.Location = new System.Drawing.Point(89, 191);
+            this.btnZaman.Name = "btnZaman";
+            this.btnZaman.Size = new System.Drawing.Size(100, 23);
+            this.btnZaman.TabIndex = 3;
+            this.btnZaman.Text = "zaman";
+            this.btnZaman.UseVisualStyleBackColor = true;
+            this.btnZaman.Click += new System.EventHandler(this.btnZaman_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnZaman);
             this.Controls.Add(this.btnMerhaba);
             this.Controls.Add(this.txtMetin);
             this.Controls.Add(this.button1);
@@ -81,6 +93,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtMetin;
         private System.Windows.Forms.Button btnMerhaba;
+        private System.Windows.Forms.Button btnZaman;
     }
 }
 
