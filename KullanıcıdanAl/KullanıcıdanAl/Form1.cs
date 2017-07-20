@@ -66,6 +66,31 @@ namespace KullanıcıdanAl
             MessageBox.Show($"Sonuc : {fark + toplam }");
         }
 
+        private void btnUcuncu_Click(object sender, EventArgs e)
+        {
+            // Not hesaplama
+            // 1.sayi vize %30;
+            // 2.sayi vize %70
 
+            double sayi1 = Convert.ToInt32(txtBirinci.Text);
+            double sayi2 = Convert.ToInt32(txtIkinci.Text);
+
+            sayi1 = (sayi1 * 30) / 100;
+            sayi2 = (sayi2 * 70) / 100;
+
+            double toplam = sayi1 + sayi2;
+
+            //MessageBox.Show("Dönem puanınız : " + toplam);
+            MessageBox.Show($"Dönem sonucunuz : {toplam}");
+
+        }
+
+        private void btnSon_Click(object sender, EventArgs e)
+        {
+            string ad = txtBirinci.Text;
+            string soyad = txtIkinci.Text;
+
+            MessageBox.Show("Mail adresiniz : " + ad + "." + soyad + "@hotmail.com");
+        }
     }
 }

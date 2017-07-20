@@ -39,6 +39,8 @@
             this.btnBir = new System.Windows.Forms.Button();
             this.btnIki = new System.Windows.Forms.Button();
             this.btnIkinci = new System.Windows.Forms.Button();
+            this.btnUcuncu = new System.Windows.Forms.Button();
+            this.btnSon = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblBir
@@ -115,7 +117,7 @@
             // 
             // btnBir
             // 
-            this.btnBir.Location = new System.Drawing.Point(148, 180);
+            this.btnBir.Location = new System.Drawing.Point(21, 180);
             this.btnBir.Name = "btnBir";
             this.btnBir.Size = new System.Drawing.Size(199, 38);
             this.btnBir.TabIndex = 8;
@@ -125,7 +127,7 @@
             // 
             // btnIki
             // 
-            this.btnIki.Location = new System.Drawing.Point(148, 224);
+            this.btnIki.Location = new System.Drawing.Point(21, 224);
             this.btnIki.Name = "btnIki";
             this.btnIki.Size = new System.Drawing.Size(199, 38);
             this.btnIki.TabIndex = 9;
@@ -135,7 +137,7 @@
             // 
             // btnIkinci
             // 
-            this.btnIkinci.Location = new System.Drawing.Point(148, 268);
+            this.btnIkinci.Location = new System.Drawing.Point(21, 268);
             this.btnIkinci.Name = "btnIkinci";
             this.btnIkinci.Size = new System.Drawing.Size(199, 38);
             this.btnIkinci.TabIndex = 10;
@@ -143,11 +145,33 @@
             this.btnIkinci.UseVisualStyleBackColor = true;
             this.btnIkinci.Click += new System.EventHandler(this.btnIkinci_Click);
             // 
+            // btnUcuncu
+            // 
+            this.btnUcuncu.Location = new System.Drawing.Point(21, 312);
+            this.btnUcuncu.Name = "btnUcuncu";
+            this.btnUcuncu.Size = new System.Drawing.Size(199, 38);
+            this.btnUcuncu.TabIndex = 11;
+            this.btnUcuncu.Text = "Üçüncü Operasyon";
+            this.btnUcuncu.UseVisualStyleBackColor = true;
+            this.btnUcuncu.Click += new System.EventHandler(this.btnUcuncu_Click);
+            // 
+            // btnSon
+            // 
+            this.btnSon.Location = new System.Drawing.Point(262, 242);
+            this.btnSon.Name = "btnSon";
+            this.btnSon.Size = new System.Drawing.Size(199, 38);
+            this.btnSon.TabIndex = 12;
+            this.btnSon.Text = "Son Operasyon";
+            this.btnSon.UseVisualStyleBackColor = true;
+            this.btnSon.Click += new System.EventHandler(this.btnSon_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(513, 369);
+            this.Controls.Add(this.btnSon);
+            this.Controls.Add(this.btnUcuncu);
             this.Controls.Add(this.btnIkinci);
             this.Controls.Add(this.btnIki);
             this.Controls.Add(this.btnBir);
@@ -180,6 +204,8 @@
         private System.Windows.Forms.Button btnBir;
         private System.Windows.Forms.Button btnIki;
         private System.Windows.Forms.Button btnIkinci;
+        private System.Windows.Forms.Button btnUcuncu;
+        private System.Windows.Forms.Button btnSon;
     }
 }
 
