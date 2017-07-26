@@ -67,8 +67,54 @@ namespace ifElse
         {
             if (e.KeyCode == Keys.Enter)
             {
-                btnHesapla_Click(sender, e);
-                txtSayi1.Focus();
+                //btnHesapla_Click(sender, e);
+                //txtSayi1.Focus();
+            }
+        }
+
+        private void cbSec_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int sayi1 = Convert.ToInt32(txtSayi1.Text);
+            int sayi2 = Convert.ToInt32(txtSayi2.Text);
+            int sonuc;
+            string degisken  = cbSec.SelectedItem.ToString();
+
+            switch (degisken)
+            {
+                case "Topla": sonuc = sayi1 + sayi2;
+                    txtToplam.Text = sonuc.ToString();
+                    break;
+                case "Çıkar":
+                    if (sayi1>=sayi2)
+                    {
+                        sonuc = sayi1 - sayi2;
+                        txtToplam.Text = sonuc.ToString();
+                    }
+                    else
+                    {
+                        sonuc = sayi2 - sayi1;
+                        txtToplam.Text = sonuc.ToString();
+                    }
+                    break;
+                case "Çarp":sonuc = sayi1 * sayi2;
+                    txtToplam.Text = sonuc.ToString();
+                    break;
+                case "Böl":
+                    if (sayi1 >= sayi2)
+                    {
+                        sonuc = sayi1 / sayi2;
+                        txtToplam.Text = sonuc.ToString();
+                    }
+                    else
+                    {
+                        sonuc = sayi2 / sayi1;
+                        txtToplam.Text = sonuc.ToString();
+                    }
+                    break;
+
+                default:
+                    MessageBox.Show("Lütfen mantıklı bir seçim yapınız!");
+                    break;
             }
         }
     }

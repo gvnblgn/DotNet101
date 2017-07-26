@@ -34,6 +34,7 @@
             this.txtSayi2 = new System.Windows.Forms.TextBox();
             this.txtToplam = new System.Windows.Forms.TextBox();
             this.btnHesapla = new System.Windows.Forms.Button();
+            this.cbSec = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lbl1
@@ -79,7 +80,7 @@
             // 
             // btnHesapla
             // 
-            this.btnHesapla.Location = new System.Drawing.Point(66, 93);
+            this.btnHesapla.Location = new System.Drawing.Point(66, 128);
             this.btnHesapla.Name = "btnHesapla";
             this.btnHesapla.Size = new System.Drawing.Size(100, 23);
             this.btnHesapla.TabIndex = 5;
@@ -87,11 +88,26 @@
             this.btnHesapla.UseVisualStyleBackColor = true;
             this.btnHesapla.Click += new System.EventHandler(this.btnHesapla_Click);
             // 
+            // cbSec
+            // 
+            this.cbSec.FormattingEnabled = true;
+            this.cbSec.Items.AddRange(new object[] {
+            "Topla",
+            "Çıkar",
+            "Çarp",
+            "Böl"});
+            this.cbSec.Location = new System.Drawing.Point(66, 88);
+            this.cbSec.Name = "cbSec";
+            this.cbSec.Size = new System.Drawing.Size(121, 21);
+            this.cbSec.TabIndex = 6;
+            this.cbSec.SelectedIndexChanged += new System.EventHandler(this.cbSec_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(679, 354);
+            this.Controls.Add(this.cbSec);
             this.Controls.Add(this.btnHesapla);
             this.Controls.Add(this.txtToplam);
             this.Controls.Add(this.txtSayi2);
@@ -113,6 +129,7 @@
         private System.Windows.Forms.TextBox txtSayi2;
         private System.Windows.Forms.TextBox txtToplam;
         private System.Windows.Forms.Button btnHesapla;
+        private System.Windows.Forms.ComboBox cbSec;
     }
 }
 
