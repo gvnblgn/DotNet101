@@ -34,6 +34,10 @@
             this.btnDeger = new System.Windows.Forms.Button();
             this.btnKontrol = new System.Windows.Forms.Button();
             this.btnFinal = new System.Windows.Forms.Button();
+            this.btnNot = new System.Windows.Forms.Button();
+            this.btnTek = new System.Windows.Forms.Button();
+            this.txtLogin = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtDeger
@@ -78,11 +82,55 @@
             this.btnFinal.UseVisualStyleBackColor = true;
             this.btnFinal.Click += new System.EventHandler(this.btnFinal_Click);
             // 
+            // btnNot
+            // 
+            this.btnNot.Location = new System.Drawing.Point(29, 168);
+            this.btnNot.Name = "btnNot";
+            this.btnNot.Size = new System.Drawing.Size(422, 23);
+            this.btnNot.TabIndex = 4;
+            this.btnNot.Text = "Onay";
+            this.btnNot.UseVisualStyleBackColor = true;
+            this.btnNot.Click += new System.EventHandler(this.btnNot_Click);
+            // 
+            // btnTek
+            // 
+            this.btnTek.Location = new System.Drawing.Point(29, 197);
+            this.btnTek.Name = "btnTek";
+            this.btnTek.Size = new System.Drawing.Size(422, 23);
+            this.btnTek.TabIndex = 5;
+            this.btnTek.Text = "tek çift";
+            this.btnTek.UseVisualStyleBackColor = true;
+            this.btnTek.Click += new System.EventHandler(this.btnTek_Click);
+            // 
+            // txtLogin
+            // 
+            this.txtLogin.Location = new System.Drawing.Point(558, 12);
+            this.txtLogin.Name = "txtLogin";
+            this.txtLogin.PasswordChar = '*';
+            this.txtLogin.Size = new System.Drawing.Size(100, 20);
+            this.txtLogin.TabIndex = 6;
+            this.txtLogin.UseSystemPasswordChar = true;
+            this.txtLogin.Enter += new System.EventHandler(this.txtLogin_Enter);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(558, 38);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(100, 23);
+            this.btnLogin.TabIndex = 7;
+            this.btnLogin.Text = "LOGİN";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(694, 261);
+            this.ClientSize = new System.Drawing.Size(694, 351);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.txtLogin);
+            this.Controls.Add(this.btnTek);
+            this.Controls.Add(this.btnNot);
             this.Controls.Add(this.btnFinal);
             this.Controls.Add(this.btnKontrol);
             this.Controls.Add(this.btnDeger);
@@ -101,6 +149,10 @@
         private System.Windows.Forms.Button btnDeger;
         private System.Windows.Forms.Button btnKontrol;
         private System.Windows.Forms.Button btnFinal;
+        private System.Windows.Forms.Button btnNot;
+        private System.Windows.Forms.Button btnTek;
+        private System.Windows.Forms.TextBox txtLogin;
+        private System.Windows.Forms.Button btnLogin;
     }
 }
 
