@@ -30,6 +30,9 @@
         {
             this.lbEkran = new System.Windows.Forms.ListBox();
             this.btnBirBin = new System.Windows.Forms.Button();
+            this.btnBinBir = new System.Windows.Forms.Button();
+            this.bntAz = new System.Windows.Forms.Button();
+            this.btnTopla = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbEkran
@@ -50,11 +53,43 @@
             this.btnBirBin.UseVisualStyleBackColor = true;
             this.btnBirBin.Click += new System.EventHandler(this.btnBirBin_Click);
             // 
+            // btnBinBir
+            // 
+            this.btnBinBir.Location = new System.Drawing.Point(8, 51);
+            this.btnBinBir.Name = "btnBinBir";
+            this.btnBinBir.Size = new System.Drawing.Size(123, 37);
+            this.btnBinBir.TabIndex = 2;
+            this.btnBinBir.Text = "1000-1";
+            this.btnBinBir.UseVisualStyleBackColor = true;
+            // 
+            // bntAz
+            // 
+            this.bntAz.Location = new System.Drawing.Point(8, 94);
+            this.bntAz.Name = "bntAz";
+            this.bntAz.Size = new System.Drawing.Size(123, 37);
+            this.bntAz.TabIndex = 3;
+            this.bntAz.Text = "A-Z";
+            this.bntAz.UseVisualStyleBackColor = true;
+            this.bntAz.Click += new System.EventHandler(this.bntAz_Click);
+            // 
+            // btnTopla
+            // 
+            this.btnTopla.Location = new System.Drawing.Point(12, 137);
+            this.btnTopla.Name = "btnTopla";
+            this.btnTopla.Size = new System.Drawing.Size(123, 37);
+            this.btnTopla.TabIndex = 4;
+            this.btnTopla.Text = "1-1000 Toplam";
+            this.btnTopla.UseVisualStyleBackColor = true;
+            this.btnTopla.Click += new System.EventHandler(this.btnTopla_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(345, 418);
+            this.Controls.Add(this.btnTopla);
+            this.Controls.Add(this.bntAz);
+            this.Controls.Add(this.btnBinBir);
             this.Controls.Add(this.btnBirBin);
             this.Controls.Add(this.lbEkran);
             this.Name = "Form1";
@@ -67,6 +102,9 @@
 
         private System.Windows.Forms.ListBox lbEkran;
         private System.Windows.Forms.Button btnBirBin;
+        private System.Windows.Forms.Button btnBinBir;
+        private System.Windows.Forms.Button bntAz;
+        private System.Windows.Forms.Button btnTopla;
     }
 }
 
