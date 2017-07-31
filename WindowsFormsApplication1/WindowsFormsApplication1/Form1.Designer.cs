@@ -80,12 +80,13 @@
             // 
             // btnMod
             // 
+            this.btnMod.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnMod.Location = new System.Drawing.Point(289, 1);
             this.btnMod.Name = "btnMod";
             this.btnMod.Size = new System.Drawing.Size(283, 50);
             this.btnMod.TabIndex = 4;
             this.btnMod.Text = "Mod";
-            this.btnMod.UseVisualStyleBackColor = true;
+            this.btnMod.UseVisualStyleBackColor = false;
             this.btnMod.Click += new System.EventHandler(this.btnMod_Click);
             // 
             // btnFunc
