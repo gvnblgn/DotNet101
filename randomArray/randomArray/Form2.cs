@@ -165,5 +165,26 @@ namespace randomArray
             }
             lbEkran.Items.Add(j);
         }
+
+        private void btnContinue_Click(object sender, EventArgs e)
+        {
+            lbEkran.Items.Clear();
+            Random rnd = new Random();
+
+            for (int i = 0; i < 8; i++)
+            {
+                int sayi = rnd.Next(1, 50);
+
+                if (lbEkran.Items.Contains(sayi))
+                {
+                    i--;
+                    continue; // continue bir önceki iterasyona götürüyor derleyiciyi
+                }
+                else
+                {
+                    lbEkran.Items.Add(sayi);
+                }
+            }
+        }
     }
 }
