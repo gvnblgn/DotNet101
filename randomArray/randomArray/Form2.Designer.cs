@@ -33,6 +33,10 @@
             this.btnAltAlta = new System.Windows.Forms.Button();
             this.lblCmd = new System.Windows.Forms.Label();
             this.btnKare = new System.Windows.Forms.Button();
+            this.btnUcgen = new System.Windows.Forms.Button();
+            this.txtCarpim = new System.Windows.Forms.Button();
+            this.lbEkran = new System.Windows.Forms.ListBox();
+            this.btnBreak = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnYanYana
@@ -48,7 +52,7 @@
             // lblYanYana
             // 
             this.lblYanYana.AutoSize = true;
-            this.lblYanYana.Location = new System.Drawing.Point(149, 39);
+            this.lblYanYana.Location = new System.Drawing.Point(149, 34);
             this.lblYanYana.Name = "lblYanYana";
             this.lblYanYana.Size = new System.Drawing.Size(14, 13);
             this.lblYanYana.TabIndex = 1;
@@ -83,11 +87,53 @@
             this.btnKare.UseVisualStyleBackColor = true;
             this.btnKare.Click += new System.EventHandler(this.btnKare_Click);
             // 
+            // btnUcgen
+            // 
+            this.btnUcgen.Location = new System.Drawing.Point(34, 121);
+            this.btnUcgen.Name = "btnUcgen";
+            this.btnUcgen.Size = new System.Drawing.Size(75, 23);
+            this.btnUcgen.TabIndex = 5;
+            this.btnUcgen.Text = "Üçgen Çiz";
+            this.btnUcgen.UseVisualStyleBackColor = true;
+            this.btnUcgen.Click += new System.EventHandler(this.btnUcgen_Click);
+            // 
+            // txtCarpim
+            // 
+            this.txtCarpim.Location = new System.Drawing.Point(169, 34);
+            this.txtCarpim.Name = "txtCarpim";
+            this.txtCarpim.Size = new System.Drawing.Size(99, 23);
+            this.txtCarpim.TabIndex = 6;
+            this.txtCarpim.Text = "Çarpım Tablosu";
+            this.txtCarpim.UseVisualStyleBackColor = true;
+            this.txtCarpim.Click += new System.EventHandler(this.txtCarpim_Click);
+            // 
+            // lbEkran
+            // 
+            this.lbEkran.FormattingEnabled = true;
+            this.lbEkran.Location = new System.Drawing.Point(274, 34);
+            this.lbEkran.Name = "lbEkran";
+            this.lbEkran.Size = new System.Drawing.Size(197, 368);
+            this.lbEkran.TabIndex = 7;
+            // 
+            // btnBreak
+            // 
+            this.btnBreak.Location = new System.Drawing.Point(169, 63);
+            this.btnBreak.Name = "btnBreak";
+            this.btnBreak.Size = new System.Drawing.Size(99, 23);
+            this.btnBreak.TabIndex = 8;
+            this.btnBreak.Text = "Break";
+            this.btnBreak.UseVisualStyleBackColor = true;
+            this.btnBreak.Click += new System.EventHandler(this.btnBreak_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(483, 432);
+            this.Controls.Add(this.btnBreak);
+            this.Controls.Add(this.lbEkran);
+            this.Controls.Add(this.txtCarpim);
+            this.Controls.Add(this.btnUcgen);
             this.Controls.Add(this.btnKare);
             this.Controls.Add(this.lblCmd);
             this.Controls.Add(this.btnAltAlta);
@@ -107,5 +153,9 @@
         private System.Windows.Forms.Button btnAltAlta;
         private System.Windows.Forms.Label lblCmd;
         private System.Windows.Forms.Button btnKare;
+        private System.Windows.Forms.Button btnUcgen;
+        private System.Windows.Forms.Button txtCarpim;
+        private System.Windows.Forms.ListBox lbEkran;
+        private System.Windows.Forms.Button btnBreak;
     }
 }
