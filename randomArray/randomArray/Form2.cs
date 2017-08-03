@@ -152,18 +152,18 @@ namespace randomArray
 
         private void btnBreak_Click(object sender, EventArgs e)
         {
-            int j = 0;
-            for (j = 0; j < 100; j++)
+            int i = 0;
+            for (i = 0; i < 100; i++)
             {
-                if (j == 20)
+                if (i == 20)
                 {
-                    lbEkran.Items.Add(j);
+                    lbEkran.Items.Add(i);
                     break;
                 }
-                lbEkran.Items.Add(j);
+                lbEkran.Items.Add(i);
                 //lbEkran.Items.Add(j); CONTROL KC YORUM YAPAR KU YORUMDAN KURTARIR
             }
-            lbEkran.Items.Add(j);
+            lbEkran.Items.Add(i);
         }
 
         private void btnContinue_Click(object sender, EventArgs e)
@@ -177,6 +177,7 @@ namespace randomArray
 
                 if (lbEkran.Items.Contains(sayi))
                 {
+
                     i--;
                     continue; // continue bir önceki iterasyona götürüyor derleyiciyi
                 }
