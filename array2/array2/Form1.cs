@@ -56,10 +56,20 @@ namespace array2
             int index = rnd.Next(0, 12);
             Text = $"Random Araç : {arabalar[index] } "; 
         }
-
+        int i = 0;
+        int sonuc = 0;
         int[] sayilar = { 12, 23, 34, 45, 56 };
         private void btnEkleTopla_Click(object sender, EventArgs e)
         {
+            lbEkran.Items.Add(sayilar[i]);
+            sonuc += sayilar[i];
+            i++;
+            Text = Convert.ToString(sonuc);
+
+            if (i== sayilar.Length)
+            {
+                MessageBox.Show("Array de başka ürün kalmamıştır! ");
+            }
 
         }
     }
