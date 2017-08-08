@@ -68,7 +68,8 @@ namespace array2
 
             if (i== sayilar.Length)
             {
-                MessageBox.Show("Array de başka ürün kalmamıştır! ");
+                MessageBox.Show("T");
+                btnEkleTopla.Enabled = false;
             }
 
         }
