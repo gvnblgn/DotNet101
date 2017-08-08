@@ -47,7 +47,7 @@ namespace forEach
 
         private void btnIki_Click(object sender, EventArgs e)
         {
-            int[] sayilar = {123, 45, 56, 876, 753, 734, 11, 9, 2017 };
+            int[] sayilar = {123, 66, 45, 56, 876, 753, 734, 11, 9, 2017 };
             // hem 2 ye hem 3 e bölünebilen kaç sayı var mesaj box a yaz
             // 2 ye bölünenleri listbox 1 e 
             // 3 e bölünenleri listbox 2 ye ekleyin

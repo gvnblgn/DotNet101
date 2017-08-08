@@ -49,9 +49,9 @@
             this.lbEkle.FormattingEnabled = true;
             this.lbEkle.Location = new System.Drawing.Point(93, 2);
             this.lbEkle.Name = "lbEkle";
+            this.lbEkle.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lbEkle.Size = new System.Drawing.Size(228, 316);
             this.lbEkle.TabIndex = 1;
-            
             // 
             // btnIki
             // 
@@ -68,6 +68,7 @@
             this.lbIki.FormattingEnabled = true;
             this.lbIki.Location = new System.Drawing.Point(332, 2);
             this.lbIki.Name = "lbIki";
+            this.lbIki.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lbIki.Size = new System.Drawing.Size(228, 316);
             this.lbIki.TabIndex = 3;
             // 
