@@ -51,6 +51,7 @@
             this.lbEkle.Name = "lbEkle";
             this.lbEkle.Size = new System.Drawing.Size(228, 316);
             this.lbEkle.TabIndex = 1;
+            
             // 
             // btnIki
             // 

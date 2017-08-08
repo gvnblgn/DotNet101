@@ -42,6 +42,8 @@ namespace forEach
             //}
 
         }
+        int setIndex2 = 0;
+        int setIndex3 = 0;
 
         private void btnIki_Click(object sender, EventArgs e)
         {
@@ -50,43 +52,62 @@ namespace forEach
             // 2 ye bölünenleri listbox 1 e 
             // 3 e bölünenleri listbox 2 ye ekleyin
             int combo = 0;
+            int index2 = 0;
+            int index3 = 0;
 
-            //for (int i = 0; i < 8; i++)
-            //{
-            //    if (sayilar[i]%2==0)
-            //    {
-            //        lbEkle.Items.Add(sayilar[i]);
-            //    }
-            //    else if (sayilar[i]%3==0)
-            //    {
-            //        lbIki.Items.Add(sayilar[i]);
-            //    }
-            //    else if (sayilar[i]%2==0 && sayilar[i]%3==0 )
-            //    {
-            //        combo++;
-            //    }
-            //}
 
             foreach (int sayi in sayilar)
             {
-                // && ve işareti solundaki ve sağındaki iki duruma sağlandığında
-                if ( sayi%2 == 0 && sayi%3==0)
+                if (sayi % 2 == 0)
                 {
-                    combo++;
+                    lbEkle.Items.Add(sayi);
+                    index2++;
                 }
+                if (sayi % 3 == 0)
+                {
+                    lbIki.Items.Add(sayi);
+                    index3++;
+                }
+                if (sayi % 2 == 0 && sayi % 3 == 0)
+                {
+                    try
+                    {
+                        combo++;
+                        setIndex2 = index2;
+                        setIndex3 = index3;
+                        
+                    }
+                    catch (Exception)
+                    {
 
-                #region 2ye3ebölünenANDsiz
-                //if (sayi % 2 == 0)
-                //{
-                //    if (sayi % 3 == 0)
-                //    {
-                //        combo++;
-                //    }
-                //}
-                
-                #endregion
-
+                    }
+                   
+                }
             }
+
+            lbEkle.SelectedIndex = setIndex2-1;
+            lbIki.SelectedIndex = setIndex3-1;
+
+            //foreach (int sayi in sayilar)
+            //{
+            //    // && ve işareti solundaki ve sağındaki iki duruma sağlandığında
+            //    if ( sayi%2 == 0 && sayi%3==0)
+            //    {
+            //        combo++;
+            //    }
+
+            //    #region 2ye3ebölünenANDsiz
+            //    //if (sayi % 2 == 0)
+            //    //{
+            //    //    if (sayi % 3 == 0)
+            //    //    {
+            //    //        combo++;
+            //    //    }
+            //    //}
+
+            //    #endregion
+
+            //}
 
             MessageBox.Show("Hem 3 e hem de 2 ye ikisini de bölünen item sayısı" + combo);
         }
