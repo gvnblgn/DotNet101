@@ -33,6 +33,8 @@
             this.btnRandom = new System.Windows.Forms.Button();
             this.btnEkleTopla = new System.Windows.Forms.Button();
             this.lbEkran = new System.Windows.Forms.ListBox();
+            this.btnAzalt = new System.Windows.Forms.Button();
+            this.btnTemizle = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSonEleman
@@ -82,11 +84,33 @@
             this.lbEkran.Size = new System.Drawing.Size(171, 329);
             this.lbEkran.TabIndex = 4;
             // 
+            // btnAzalt
+            // 
+            this.btnAzalt.Location = new System.Drawing.Point(12, 172);
+            this.btnAzalt.Name = "btnAzalt";
+            this.btnAzalt.Size = new System.Drawing.Size(121, 23);
+            this.btnAzalt.TabIndex = 5;
+            this.btnAzalt.Text = "Azaltarak Ekle";
+            this.btnAzalt.UseVisualStyleBackColor = true;
+            this.btnAzalt.Click += new System.EventHandler(this.btnAzalt_Click);
+            // 
+            // btnTemizle
+            // 
+            this.btnTemizle.Location = new System.Drawing.Point(12, 201);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Size = new System.Drawing.Size(121, 23);
+            this.btnTemizle.TabIndex = 6;
+            this.btnTemizle.Text = "Temizle";
+            this.btnTemizle.UseVisualStyleBackColor = true;
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(319, 422);
+            this.Controls.Add(this.btnTemizle);
+            this.Controls.Add(this.btnAzalt);
             this.Controls.Add(this.lbEkran);
             this.Controls.Add(this.btnEkleTopla);
             this.Controls.Add(this.btnRandom);
@@ -105,6 +129,8 @@
         private System.Windows.Forms.Button btnRandom;
         private System.Windows.Forms.Button btnEkleTopla;
         private System.Windows.Forms.ListBox lbEkran;
+        private System.Windows.Forms.Button btnAzalt;
+        private System.Windows.Forms.Button btnTemizle;
     }
 }
 
