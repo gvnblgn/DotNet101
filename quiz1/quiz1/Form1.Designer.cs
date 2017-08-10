@@ -40,6 +40,7 @@
             this.lblNo = new System.Windows.Forms.Label();
             this.btnSurname = new System.Windows.Forms.Button();
             this.btnNo = new System.Windows.Forms.Button();
+            this.btnGet = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtName
@@ -125,31 +126,22 @@
             this.lblNo.TabIndex = 11;
             this.lblNo.Text = "Telephone No";
             // 
-            // btnSurname
+            // btnGet
             // 
-            this.btnSurname.Location = new System.Drawing.Point(390, 88);
-            this.btnSurname.Name = "btnSurname";
-            this.btnSurname.Size = new System.Drawing.Size(113, 23);
-            this.btnSurname.TabIndex = 6;
-            this.btnSurname.Text = "Search SurName";
-            this.btnSurname.UseVisualStyleBackColor = true;
-            this.btnSurname.Click += new System.EventHandler(this.btnSurname_Click);
-            // 
-            // btnNo
-            // 
-            this.btnNo.Location = new System.Drawing.Point(390, 117);
-            this.btnNo.Name = "btnNo";
-            this.btnNo.Size = new System.Drawing.Size(113, 23);
-            this.btnNo.TabIndex = 7;
-            this.btnNo.Text = "Search No";
-            this.btnNo.UseVisualStyleBackColor = true;
-            this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
+            this.btnGet.Location = new System.Drawing.Point(390, 146);
+            this.btnGet.Name = "btnGet";
+            this.btnGet.Size = new System.Drawing.Size(113, 23);
+            this.btnGet.TabIndex = 12;
+            this.btnGet.Text = "Get All Over";
+            this.btnGet.UseVisualStyleBackColor = true;
+            this.btnGet.Click += new System.EventHandler(this.btnGet_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(515, 441);
+            this.Controls.Add(this.btnGet);
             this.Controls.Add(this.btnNo);
             this.Controls.Add(this.btnSurname);
             this.Controls.Add(this.lblNo);
@@ -183,6 +175,7 @@
         private System.Windows.Forms.Label lblNo;
         private System.Windows.Forms.Button btnSurname;
         private System.Windows.Forms.Button btnNo;
+        private System.Windows.Forms.Button btnGet;
     }
 }
 
