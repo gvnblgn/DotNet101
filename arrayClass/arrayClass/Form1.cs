@@ -37,5 +37,16 @@ namespace arrayClass
             string[] ornek = new string[4];
             Array.Copy(sehirler, 3, ornek, 0, 2);
         }
+
+        private void btnLastIndex_Click(object sender, EventArgs e)
+        {
+            int index = Array.LastIndexOf(sehirler, "Adana");
+            //int firstIndex = Array.IndexOf(sehirler, "Trabzon");
+        }
+
+        private void btnIndex_Click(object sender, EventArgs e)
+        {
+            int index = Array.IndexOf(sehirler, "İzmir");
+        }
     }
 }
