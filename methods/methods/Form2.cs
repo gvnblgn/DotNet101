@@ -32,6 +32,11 @@ namespace methods
             BackColor = Color.FromArgb(red, green, blue);
         }
 
+        Color RenkBul()
+        {
+            return BackColor;
+        }
+
         int Topla(int sayi1, int sayi2)
         {
             int toplam = sayi1 + sayi2;
@@ -87,6 +92,14 @@ namespace methods
         private void btnRandomColor_Click(object sender, EventArgs e)
         {
             RenkDegistir();
+        }
+
+        private void btnRenkBul_Click(object sender, EventArgs e)
+        {
+            //Text = RenkBul().Name ;
+            Color c = RenkBul();
+            MessageBox.Show(c.Name);
+            System.Diagnostics.Process.Start("http://www.yavuzgedik.com");
         }
     }
 }

@@ -36,6 +36,7 @@
             this.btnRandom = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnRandomColor = new System.Windows.Forms.Button();
+            this.btnRenkBul = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.num1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num2)).BeginInit();
             this.SuspendLayout();
@@ -120,11 +121,22 @@
             this.btnRandomColor.UseVisualStyleBackColor = true;
             this.btnRandomColor.Click += new System.EventHandler(this.btnRandomColor_Click);
             // 
+            // btnRenkBul
+            // 
+            this.btnRenkBul.Location = new System.Drawing.Point(0, 204);
+            this.btnRenkBul.Name = "btnRenkBul";
+            this.btnRenkBul.Size = new System.Drawing.Size(280, 23);
+            this.btnRenkBul.TabIndex = 8;
+            this.btnRenkBul.Text = "Renk Neymiş";
+            this.btnRenkBul.UseVisualStyleBackColor = true;
+            this.btnRenkBul.Click += new System.EventHandler(this.btnRenkBul_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(462, 431);
+            this.Controls.Add(this.btnRenkBul);
             this.Controls.Add(this.btnRandomColor);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnRandom);
@@ -152,5 +164,6 @@
         private System.Windows.Forms.Button btnRandom;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btnRandomColor;
+        private System.Windows.Forms.Button btnRenkBul;
     }
 }
