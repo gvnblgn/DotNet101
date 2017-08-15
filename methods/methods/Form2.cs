@@ -17,6 +17,21 @@ namespace methods
             InitializeComponent();
         }
 
+        Random rnd = new Random();
+        void RenkDegistir(string color)
+        {
+            BackColor = Color.FromName(color);
+        }
+
+        void RenkDegistir()  // parametresizi overload
+        {
+            int red = rnd.Next(0, 256);
+            int green = rnd.Next(0, 256);
+            int blue = rnd.Next(0, 256);
+
+            BackColor = Color.FromArgb(red, green, blue);
+        }
+
         int Topla(int sayi1, int sayi2)
         {
             int toplam = sayi1 + sayi2;
@@ -30,6 +45,48 @@ namespace methods
             //int toplam = Topla(number1, number2);
 
             MessageBox.Show($"Girdiğiniz sayıların toplamı :  {Topla(number1,number2)} ");
+        }
+
+        string TekCift(int sayi)
+        {
+            if (sayi %2 == 0)
+            {
+                return "çift";
+            }
+            else
+            {
+                return "tek";
+            }
+        }
+
+        private void btnCiftTek_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(TekCift(int.Parse(txtSayi.Text)));
+        }
+
+        private void btnRandom_Click(object sender, EventArgs e)
+        {
+           
+            int sayi = rnd.Next(1, 10000);
+
+            if (TekCift(sayi)== "Tek")
+            {
+                MessageBox.Show($"(sayi) çift olduğundan kaybettiniz!");
+            }
+            else
+            {
+                MessageBox.Show($"(sayi) tek olduğundan kazandınız!");
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RenkDegistir(comboBox1.SelectedItem.ToString());
+        }
+
+        private void btnRandomColor_Click(object sender, EventArgs e)
+        {
+            RenkDegistir();
         }
     }
 }
