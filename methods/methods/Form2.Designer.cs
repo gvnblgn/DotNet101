@@ -37,6 +37,12 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnRandomColor = new System.Windows.Forms.Button();
             this.btnRenkBul = new System.Windows.Forms.Button();
+            this.btnOlustur = new System.Windows.Forms.Button();
+            this.txtAd = new System.Windows.Forms.TextBox();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
+            this.lblAd = new System.Windows.Forms.Label();
+            this.lblSoyad = new System.Windows.Forms.Label();
+            this.cbHost = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.num1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num2)).BeginInit();
             this.SuspendLayout();
@@ -131,11 +137,74 @@
             this.btnRenkBul.UseVisualStyleBackColor = true;
             this.btnRenkBul.Click += new System.EventHandler(this.btnRenkBul_Click);
             // 
+            // btnOlustur
+            // 
+            this.btnOlustur.BackColor = System.Drawing.Color.Thistle;
+            this.btnOlustur.Location = new System.Drawing.Point(94, 318);
+            this.btnOlustur.Name = "btnOlustur";
+            this.btnOlustur.Size = new System.Drawing.Size(128, 85);
+            this.btnOlustur.TabIndex = 9;
+            this.btnOlustur.Text = "OLUŞTUR";
+            this.btnOlustur.UseVisualStyleBackColor = false;
+            this.btnOlustur.Click += new System.EventHandler(this.btnOlustur_Click);
+            // 
+            // txtAd
+            // 
+            this.txtAd.Location = new System.Drawing.Point(93, 233);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(128, 20);
+            this.txtAd.TabIndex = 10;
+            // 
+            // txtSoyad
+            // 
+            this.txtSoyad.Location = new System.Drawing.Point(93, 259);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(128, 20);
+            this.txtSoyad.TabIndex = 11;
+            // 
+            // lblAd
+            // 
+            this.lblAd.AutoSize = true;
+            this.lblAd.Location = new System.Drawing.Point(12, 240);
+            this.lblAd.Name = "lblAd";
+            this.lblAd.Size = new System.Drawing.Size(26, 13);
+            this.lblAd.TabIndex = 12;
+            this.lblAd.Text = "Ad :";
+            // 
+            // lblSoyad
+            // 
+            this.lblSoyad.AutoSize = true;
+            this.lblSoyad.Location = new System.Drawing.Point(12, 262);
+            this.lblSoyad.Name = "lblSoyad";
+            this.lblSoyad.Size = new System.Drawing.Size(43, 13);
+            this.lblSoyad.TabIndex = 13;
+            this.lblSoyad.Text = "Soyad :";
+            // 
+            // cbHost
+            // 
+            this.cbHost.FormattingEnabled = true;
+            this.cbHost.Items.AddRange(new object[] {
+            "@hotmail.com",
+            "@windowslive.com",
+            "@yahoo.com",
+            "@mynet.com",
+            "@gmail.com"});
+            this.cbHost.Location = new System.Drawing.Point(94, 285);
+            this.cbHost.Name = "cbHost";
+            this.cbHost.Size = new System.Drawing.Size(128, 21);
+            this.cbHost.TabIndex = 14;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(462, 431);
+            this.Controls.Add(this.cbHost);
+            this.Controls.Add(this.lblSoyad);
+            this.Controls.Add(this.lblAd);
+            this.Controls.Add(this.txtSoyad);
+            this.Controls.Add(this.txtAd);
+            this.Controls.Add(this.btnOlustur);
             this.Controls.Add(this.btnRenkBul);
             this.Controls.Add(this.btnRandomColor);
             this.Controls.Add(this.comboBox1);
@@ -165,5 +234,11 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btnRandomColor;
         private System.Windows.Forms.Button btnRenkBul;
+        private System.Windows.Forms.Button btnOlustur;
+        private System.Windows.Forms.TextBox txtAd;
+        private System.Windows.Forms.TextBox txtSoyad;
+        private System.Windows.Forms.Label lblAd;
+        private System.Windows.Forms.Label lblSoyad;
+        private System.Windows.Forms.ComboBox cbHost;
     }
 }

@@ -18,6 +18,14 @@ namespace methods
         }
 
         Random rnd = new Random();
+
+        string MailOlustur(string ad, string soyad, string domain)
+        {
+            string degiskenAd = ad.Substring(0, 1).ToUpper() + ad.Substring(1, ad.Length -1);
+            string degisenSoyad = soyad.Substring(0, 1).ToUpper() + soyad.Substring(1, soyad.Length - 1) ; 
+            return degiskenAd + degisenSoyad + domain;
+        }
+
         void RenkDegistir(string color)
         {
             BackColor = Color.FromName(color);
@@ -100,6 +108,11 @@ namespace methods
             Color c = RenkBul();
             MessageBox.Show(c.Name);
             System.Diagnostics.Process.Start("http://www.yavuzgedik.com");
+        }
+
+        private void btnOlustur_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(MailOlustur(txtAd.Text.Trim(), txtSoyad.Text.Trim(), cbHost.SelectedItem.ToString()));    
         }
     }
 }
