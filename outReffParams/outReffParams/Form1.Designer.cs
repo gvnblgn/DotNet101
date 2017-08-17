@@ -31,6 +31,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnOut_2 = new System.Windows.Forms.Button();
             this.btnOut_3 = new System.Windows.Forms.Button();
+            this.btnRef = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -63,11 +64,22 @@
             this.btnOut_3.UseVisualStyleBackColor = true;
             this.btnOut_3.Click += new System.EventHandler(this.btnOut_3_Click);
             // 
+            // btnRef
+            // 
+            this.btnRef.Location = new System.Drawing.Point(0, 273);
+            this.btnRef.Name = "btnRef";
+            this.btnRef.Size = new System.Drawing.Size(241, 85);
+            this.btnRef.TabIndex = 3;
+            this.btnRef.Text = "REF";
+            this.btnRef.UseVisualStyleBackColor = true;
+            this.btnRef.Click += new System.EventHandler(this.btnRef_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(496, 432);
+            this.Controls.Add(this.btnRef);
             this.Controls.Add(this.btnOut_3);
             this.Controls.Add(this.btnOut_2);
             this.Controls.Add(this.button1);
@@ -82,6 +94,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnOut_2;
         private System.Windows.Forms.Button btnOut_3;
+        private System.Windows.Forms.Button btnRef;
     }
 }
 

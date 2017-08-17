@@ -41,6 +41,11 @@ namespace outReffParams
             return toplamFiyat;
         }
 
+        void Arttir(ref int sayi)
+        {
+            sayi++;
+        }
+
         private void button1_Click(object sender, EventArgs e) 
         {
             double yakanalanSonuc;
@@ -61,6 +66,13 @@ namespace outReffParams
         private void btnOut_3_Click(object sender, EventArgs e)
         {
             MessageBox.Show(FiyatHesapla(193.20,56.55,68.74,123.54).ToString());
+        }
+
+        private void btnRef_Click(object sender, EventArgs e)
+        {
+            int number = 0;
+            Arttir(ref number);
+            MessageBox.Show(number.ToString());
         }
     }
 }
