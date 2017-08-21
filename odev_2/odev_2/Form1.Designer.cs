@@ -63,6 +63,7 @@
             this.btnGir.TabIndex = 2;
             this.btnGir.Text = "Oyuna Başla ";
             this.btnGir.UseVisualStyleBackColor = true;
+            this.btnGir.Click += new System.EventHandler(this.btnGir_Click);
             // 
             // Form1
             // 
