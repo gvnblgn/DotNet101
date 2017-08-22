@@ -28,6 +28,33 @@ namespace listCollection
            
         }
 
-        void ListBoxVeriEklemeInt(List<int> ());
+        
+
+        private void btnYillar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        void ListBoxVeriEklemeInt
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if(txtSearch.Text != "")
+            {
+                int index = yeniList.IndexOf(int.Parse(txtSearch.Text));
+                Text = index.ToString();
+
+                if (index >= -1)
+                {
+                    ListBoxVeriEklemeInt(yeniList);
+                }
+            }
+            else
+            {
+                ListBoxVeriEklemeInt(yeniList);
+            }
+        }
+
+
     }
 }
