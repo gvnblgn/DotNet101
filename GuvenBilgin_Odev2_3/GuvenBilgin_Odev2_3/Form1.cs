@@ -25,7 +25,7 @@ namespace GuvenBilgin_Odev2_3
 
         private void btnBasla_Click(object sender, EventArgs e)
         {
-            timer1.Interval = 1000;
+            timer1.Interval = 1;
             timer1.Start();
         }
 
@@ -33,7 +33,7 @@ namespace GuvenBilgin_Odev2_3
         {
             this.Text = tursayisiSaniye.ToString();
             tursayisiSaniye += 1;
-            if (tursayisiSaniye == 100)
+            if (tursayisiSaniye == 60)
             {
                 tursayisiDakika += 1;
                 tursayisiSaniye = 0;

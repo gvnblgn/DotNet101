@@ -44,7 +44,7 @@ namespace GuvenBilgin_Odev2_1
             }
             if (zorluk == "Çok Zor")
             {
-                hak -= 7;
+                hak = 10;
                 txtHak.Text = (hak).ToString();
                 hedef = rnd.Next(0, 100);
             }

@@ -68,7 +68,7 @@ namespace GuvenBilgin_Odev2_2
 
 
             sayilar.AddRange(new int[] { sayi1, sayi2, sayi3, sayi4, sayi5 });
-
+            
             enbuyukSayi = EnbuyuguBul(sayilar);
             MessageBox.Show($"Girdiğiniz sayıların en büyüğü : { enbuyukSayi}");
             txtSayi1.Text = "0";
