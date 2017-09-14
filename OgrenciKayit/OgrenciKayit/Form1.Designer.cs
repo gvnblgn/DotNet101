@@ -221,7 +221,8 @@
             this.Controls.Add(this.gbOgrenci);
             this.Controls.Add(this.lbOgrenci);
             this.Name = "Form1";
-            this.Text = "STUDENT REGISTRATION PANEL";
+            this.Text = "r";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.gbOgrenci.ResumeLayout(false);
             this.gbOgrenci.PerformLayout();
             this.ResumeLayout(false);

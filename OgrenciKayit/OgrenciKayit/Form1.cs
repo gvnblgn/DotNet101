@@ -58,6 +58,8 @@ namespace OgrenciKayit
             }
         }
 
+        void t
+
         List<Student> ogrenci = new List<Student>();
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -130,6 +132,11 @@ namespace OgrenciKayit
             catch (Exception)
             {
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            lbOgrenci.Items.Add("ad" + "  " + "soyad");
         }
     }
 }
