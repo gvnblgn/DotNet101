@@ -33,6 +33,7 @@ namespace FaturaOdemeMerkezi
                 lblBaslikMesaj.Text = $"{vezneSayisi} Adet Vezne Hizmete Hazır.";
                 gboxAcilis.Enabled = false;
                 VezneOlustur(vezneSayisi);
+                
             }
             else
             {
