@@ -8,20 +8,15 @@ namespace SinemaUygulamasi_GuvenBilgin.Models
 {
     public class Film
     {
-        public Film()
-        {
-            //Seans = new List<Seans>();
-        }
-
         public int FilmNo { get; set; }
         public string FilmAdi { get; set; }
 
-        public Seans Seans { get; set; }
-
+        public Seans Seanslar { get; set; }
 
         public override string ToString()
         {
-            return FilmNo + "\t" + FilmAdi;
+            return FilmNo + "-) " + FilmAdi + "----Filmin Seansı:" + Seanslar;
         }
     }
 }
+                                                                                     

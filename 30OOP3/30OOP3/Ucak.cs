@@ -18,7 +18,7 @@ namespace _30OOP3
 
         public override string ToString()
         {
-            return Agirlik + " " + KoltukSayisi; 
+            return Agirlik + " " + KoltukSayisi;
         }
     }
 }

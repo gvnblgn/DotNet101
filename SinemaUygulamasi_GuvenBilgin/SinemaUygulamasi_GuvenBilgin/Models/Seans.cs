@@ -13,18 +13,19 @@ namespace SinemaUygulamasi_GuvenBilgin.Models
 
         }
 
-        public Seans(DateTime _BaslangicSaati , DateTime _BitisSaati)
+        public Seans(int _BaslangicSaati , int _BitisSaati)
         {
-            BaslangicSaati = _BaslangicSaati;
+           BaslangicSaati = _BaslangicSaati;
             BitisSaati = _BitisSaati;
         }
-        public Film FilmNo { get; set; }
-        public DateTime BaslangicSaati { get; set; } 
-        public DateTime BitisSaati { get; set; }
+        public int Durum { get; set; }
+        public int BaslangicSaati { get; set; } 
+        public int BitisSaati { get; set; }
+        
 
         public override string ToString()
         {
-            return BaslangicSaati.ToString("HH:mm") + "\t" + BitisSaati;
+            return BaslangicSaati+ ":00<=>" + BitisSaati+":00";
         }
     }
 }

@@ -51,6 +51,7 @@ namespace _30OOP3
         {
             if (cboxUcakTurleri.SelectedItem.ToString() == "Boing")
             {
+                txtIsim.Clear();
                 txtIsim.Enabled = false;
             }
             else
@@ -62,6 +63,14 @@ namespace _30OOP3
         private void listBox1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void listBox1_DoubleClick(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedItem != null)
+            {
+                listBox1.Items.RemoveAt(listBox1.SelectedIndex);
+            }
         }
     }
 }

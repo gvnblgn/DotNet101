@@ -148,6 +148,7 @@
             this.listBox1.Size = new System.Drawing.Size(285, 184);
             this.listBox1.TabIndex = 11;
             this.listBox1.Click += new System.EventHandler(this.listBox1_Click);
+            this.listBox1.DoubleClick += new System.EventHandler(this.listBox1_DoubleClick);
             // 
             // Form1
             // 

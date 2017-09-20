@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.gboxSalon = new System.Windows.Forms.GroupBox();
-            this.btnK3 = new System.Windows.Forms.Button();
-            this.btnK2 = new System.Windows.Forms.Button();
-            this.btnK1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cbSeans = new System.Windows.Forms.ComboBox();
@@ -46,62 +43,28 @@
             this.txtFilm = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.dtpBitis = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dtpBaslangic = new System.Windows.Forms.DateTimePicker();
             this.gboxSalon.SuspendLayout();
             this.gboxFilm.SuspendLayout();
             this.SuspendLayout();
             // 
             // gboxSalon
             // 
-            this.gboxSalon.Controls.Add(this.btnK3);
-            this.gboxSalon.Controls.Add(this.btnK2);
-            this.gboxSalon.Controls.Add(this.btnK1);
             this.gboxSalon.Controls.Add(this.label7);
             this.gboxSalon.Controls.Add(this.label6);
             this.gboxSalon.Controls.Add(this.cbSeans);
             this.gboxSalon.Controls.Add(this.cbFilm);
             this.gboxSalon.Controls.Add(this.button1);
-            this.gboxSalon.Location = new System.Drawing.Point(32, 111);
+            this.gboxSalon.Location = new System.Drawing.Point(14, 72);
             this.gboxSalon.Name = "gboxSalon";
-            this.gboxSalon.Size = new System.Drawing.Size(580, 307);
+            this.gboxSalon.Size = new System.Drawing.Size(249, 153);
             this.gboxSalon.TabIndex = 0;
             this.gboxSalon.TabStop = false;
             this.gboxSalon.Text = "Sinema Salonu";
             // 
-            // btnK3
-            // 
-            this.btnK3.Location = new System.Drawing.Point(311, 115);
-            this.btnK3.Name = "btnK3";
-            this.btnK3.Size = new System.Drawing.Size(104, 84);
-            this.btnK3.TabIndex = 17;
-            this.btnK3.Text = "Koltuk 3";
-            this.btnK3.UseVisualStyleBackColor = true;
-            // 
-            // btnK2
-            // 
-            this.btnK2.Location = new System.Drawing.Point(172, 115);
-            this.btnK2.Name = "btnK2";
-            this.btnK2.Size = new System.Drawing.Size(104, 84);
-            this.btnK2.TabIndex = 16;
-            this.btnK2.Text = "Koltuk 2";
-            this.btnK2.UseVisualStyleBackColor = true;
-            // 
-            // btnK1
-            // 
-            this.btnK1.Location = new System.Drawing.Point(28, 115);
-            this.btnK1.Name = "btnK1";
-            this.btnK1.Size = new System.Drawing.Size(104, 84);
-            this.btnK1.TabIndex = 15;
-            this.btnK1.Text = "Koltuk 1";
-            this.btnK1.UseVisualStyleBackColor = true;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(317, 16);
+            this.label7.Location = new System.Drawing.Point(12, 72);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(237, 13);
             this.label7.TabIndex = 14;
@@ -119,7 +82,7 @@
             // cbSeans
             // 
             this.cbSeans.FormattingEnabled = true;
-            this.cbSeans.Location = new System.Drawing.Point(320, 48);
+            this.cbSeans.Location = new System.Drawing.Point(12, 91);
             this.cbSeans.Name = "cbSeans";
             this.cbSeans.Size = new System.Drawing.Size(208, 21);
             this.cbSeans.TabIndex = 12;
@@ -127,14 +90,14 @@
             // cbFilm
             // 
             this.cbFilm.FormattingEnabled = true;
-            this.cbFilm.Location = new System.Drawing.Point(12, 48);
+            this.cbFilm.Location = new System.Drawing.Point(15, 48);
             this.cbFilm.Name = "cbFilm";
             this.cbFilm.Size = new System.Drawing.Size(208, 21);
             this.cbFilm.TabIndex = 11;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(249, 258);
+            this.button1.Location = new System.Drawing.Point(12, 114);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -143,10 +106,6 @@
             // 
             // gboxFilm
             // 
-            this.gboxFilm.Controls.Add(this.dtpBitis);
-            this.gboxFilm.Controls.Add(this.dtpBaslangic);
-            this.gboxFilm.Controls.Add(this.label5);
-            this.gboxFilm.Controls.Add(this.label4);
             this.gboxFilm.Controls.Add(this.btnFilmEkle);
             this.gboxFilm.Controls.Add(this.label3);
             this.gboxFilm.Controls.Add(this.label2);
@@ -164,7 +123,7 @@
             // btnFilmEkle
             // 
             this.btnFilmEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFilmEkle.Location = new System.Drawing.Point(6, 413);
+            this.btnFilmEkle.Location = new System.Drawing.Point(6, 408);
             this.btnFilmEkle.Name = "btnFilmEkle";
             this.btnFilmEkle.Size = new System.Drawing.Size(255, 23);
             this.btnFilmEkle.TabIndex = 6;
@@ -176,7 +135,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 269);
+            this.label3.Location = new System.Drawing.Point(3, 226);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 13);
             this.label3.TabIndex = 5;
@@ -186,7 +145,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 103);
+            this.label2.Location = new System.Drawing.Point(6, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 13);
             this.label2.TabIndex = 4;
@@ -195,17 +154,17 @@
             // lbSeanslar
             // 
             this.lbSeanslar.FormattingEnabled = true;
-            this.lbSeanslar.Location = new System.Drawing.Point(6, 285);
+            this.lbSeanslar.Location = new System.Drawing.Point(6, 242);
             this.lbSeanslar.Name = "lbSeanslar";
-            this.lbSeanslar.Size = new System.Drawing.Size(255, 121);
+            this.lbSeanslar.Size = new System.Drawing.Size(255, 160);
             this.lbSeanslar.TabIndex = 3;
             // 
             // lbFilm
             // 
             this.lbFilm.FormattingEnabled = true;
-            this.lbFilm.Location = new System.Drawing.Point(6, 132);
+            this.lbFilm.Location = new System.Drawing.Point(6, 63);
             this.lbFilm.Name = "lbFilm";
-            this.lbFilm.Size = new System.Drawing.Size(255, 134);
+            this.lbFilm.Size = new System.Drawing.Size(255, 160);
             this.lbFilm.TabIndex = 2;
             // 
             // txtFilm
@@ -227,46 +186,12 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(80, 0);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(1, -4);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(456, 108);
+            this.label8.Size = new System.Drawing.Size(310, 73);
             this.label8.TabIndex = 18;
             this.label8.Text = "SALON 1";
-            // 
-            // dtpBitis
-            // 
-            this.dtpBitis.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpBitis.Location = new System.Drawing.Point(114, 72);
-            this.dtpBitis.Name = "dtpBitis";
-            this.dtpBitis.Size = new System.Drawing.Size(147, 20);
-            this.dtpBitis.TabIndex = 10;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 72);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Film Bitiş Saati :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 44);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Film Başlangıç Saati :";
-            // 
-            // dtpBaslangic
-            // 
-            this.dtpBaslangic.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpBaslangic.Location = new System.Drawing.Point(114, 44);
-            this.dtpBaslangic.Name = "dtpBaslangic";
-            this.dtpBaslangic.Size = new System.Drawing.Size(147, 20);
-            this.dtpBaslangic.TabIndex = 9;
             // 
             // Form1
             // 
@@ -277,7 +202,7 @@
             this.Controls.Add(this.gboxFilm);
             this.Controls.Add(this.gboxSalon);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.gboxSalon.ResumeLayout(false);
             this.gboxSalon.PerformLayout();
             this.gboxFilm.ResumeLayout(false);
@@ -299,18 +224,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox lbSeanslar;
-        private System.Windows.Forms.Button btnK3;
-        private System.Windows.Forms.Button btnK2;
-        private System.Windows.Forms.Button btnK1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbSeans;
         private System.Windows.Forms.ComboBox cbFilm;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dtpBitis;
-        private System.Windows.Forms.DateTimePicker dtpBaslangic;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
     }
 }
 
